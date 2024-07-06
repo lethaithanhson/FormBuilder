@@ -87,8 +87,8 @@ const StatsCards = (props: StatsCardProps) => {
 export const StatsCardsSkeleton = ()=>{
   return(
     <div className='w-full pt-8 gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
-       {[1,2,3,4].map(()=>(
-        <Skeleton className='border dark:border-white/10 border-primary/20 h-[114px] w-full' />
+       {[1,2,3,4].map((item)=>(
+        <Skeleton key={item} className='border dark:border-white/10 border-primary/20 h-[114px] w-full' />
        ))}
     </div>
   )
